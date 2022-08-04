@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: lightgray;
+    --secondary-color: black;
+}
+.dark-theme {
+    --primary-color: black;
+    --secondary-color: #fff;
+}
+
+#icon {
+    width: 50px;
+    cursor: pointer;
+
+}
+body {
+    background-color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+p {
+    text-align: center;
+    color: var(--secondary-color);
+}
+.swap {
+    color: #fff;
+    background-color: darkgreen;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 10px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.currency {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency select {
+    padding: 10px 20px 10px 20px;
+    border: 1px solid gray;
+    font-size: 15px;
+    background: transparent;
+    color: var(--secondary-color);
+}
+
+.currency input {
+    border: 0;
+    background: transparent;
+    text-align: right;
+    font-size: 20px;
+    padding: 7px 10px;
+    color: var(--secondary-color);
+}
+.currency input:focus{
+    outline: none;
+}
+
+select:focus , input:focus , button:focus {
+    outline: none;
+}
+
+.rate {
+    color: darkgreen;
+    font-size: 20px;
+    padding: 10 10px;
+    margin: 10px 0;
+}
+
+@media screen and (min-width: 400px) {
+    h1 {
+      font-size: 28px;
+    }
+    .currency {
+        display: block;
+        align-items: center;
+        justify-content: center
+    };
+            
+  }
+@media screen and (min-width: 300px) {
+    h1 {
+    font-size: 20px;
+    }
+    .currency {
+        display: block;
+        align-items: center;
+        justify-content: center
+    };
+            
+}
